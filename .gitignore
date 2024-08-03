@@ -193,8 +193,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Ignore video files in the demo directory
+# Ignore the output directories and generated files
 Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/video/*
-
-# Ignore input_clip.mp4 file
 Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/*
+skeleton_coord.json
