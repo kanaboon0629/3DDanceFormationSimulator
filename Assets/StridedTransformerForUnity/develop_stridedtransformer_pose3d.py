@@ -109,10 +109,26 @@ full_video_path = os.path.join(base_dir, '3d-human-pose-estimation/demo/video/fu
 file_name = 'input_clip.mp4'
 input_clip_path = os.path.join(base_dir, '3d-human-pose-estimation/demo/video', file_name)
 
-# 動画ダウンロード
-ydl_opts = {'format': '312', 'overwrites': True, 'outtmpl': full_video_path}
+# 利用可能なフォーマットを取得
+ydl_opts = {'listformats': True}
 with YoutubeDL(ydl_opts) as ydl:
-    ydl.download([video_url])
+    info_dict = ydl.extract_info(video_url, download=False)
+    formats = info_dict.get('formats', [])
+    
+    # heightがNoneまたは0でないフォーマットのみを対象に最高のフォーマットを選択
+    best_format = max(
+        (fmt for fmt in formats if fmt.get('height') is not None),
+        key=lambda x: x.get('height', 0),
+        default=None
+    )
+
+# best_formatがNoneでないことを確認してからダウンロード
+if best_format:
+    ydl_opts = {'format': best_format['format_id'], 'overwrites': True, 'outtmpl': full_video_path}
+    with YoutubeDL(ydl_opts) as ydl:
+        ydl.download([video_url])
+else:
+    print("No valid format found")
 
 # 指定区間切り抜き
 with VideoFileClip(full_video_path) as video:
