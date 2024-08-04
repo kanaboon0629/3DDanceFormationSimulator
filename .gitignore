@@ -194,6 +194,15 @@ dmypy.json
 .pyre/
 
 # Ignore the output directories and generated files
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/input_clip/input_2D/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/input_clip/pose/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/input_clip/pose2D/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/input_clip/pose3D/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/input_clip/input_clip.mp4
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/sample_video/input_2D/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/sample_video/pose/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/sample_video/pose2D/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/sample_video/pose3D/*
+Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/sample_video/sample_video.mp4
 Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/video/*
-Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/*
 skeleton_coord.json
