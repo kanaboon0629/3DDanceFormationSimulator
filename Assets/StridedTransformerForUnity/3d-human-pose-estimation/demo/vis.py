@@ -11,6 +11,7 @@ from tqdm import tqdm
 import copy
 from IPython import embed
 import json
+import shutil
 
 sys.path.append(os.getcwd())
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -28,6 +29,11 @@ matplotlib.rcParams['ps.fonttype'] = 42
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
+
+def clean_directory(directory):
+    if os.path.exists(directory):
+        shutil.rmtree(directory)
+    os.makedirs(directory, exist_ok=True)
 
 def show2Dpose(kps, img):
     connections = [[0, 1], [1, 2], [2, 3], [0, 4], [4, 5],
@@ -164,6 +170,11 @@ def showimage(ax, img):
 
 
 def get_pose3D(video_path, output_dir):
+    output_dir_2D = os.path.join(output_dir, 'pose2D/')
+    output_dir_3D = os.path.join(output_dir, 'pose3D/')
+    clean_directory(output_dir_2D)
+    clean_directory(output_dir_3D)
+
     args, _ = argparse.ArgumentParser().parse_known_args()
     args.layers, args.channel, args.d_hid, args.frames = 3, 256, 512, 351
     args.stride_num = [3, 9, 13]
@@ -274,8 +285,6 @@ def get_pose3D(video_path, output_dir):
 
         # 2D
         image = show2Dpose(input_2D_no, copy.deepcopy(img))
-        output_dir_2D = output_dir + 'pose2D/'
-        os.makedirs(output_dir_2D, exist_ok=True)
         cv2.imwrite(output_dir_2D + str(('%04d' % i)) + '_2D.png', image)
 
         # 3D
@@ -289,8 +298,6 @@ def get_pose3D(video_path, output_dir):
         d = show3Dpose(post_out, ax)
         joint_coord_dict[i] = d
 
-        output_dir_3D = output_dir + 'pose3D/'
-        os.makedirs(output_dir_3D, exist_ok=True)
         plt.savefig(output_dir_3D + str(('%04d' % i)) + '_3D.png', dpi=200, format='png', bbox_inches='tight')
 
     with open("skeleton_coord.json", "w", encoding="utf-8") as f:
@@ -304,6 +311,8 @@ def get_pose3D(video_path, output_dir):
     image_3d_dir = sorted(glob.glob(os.path.join(output_dir_3D, '*.png')))
 
     print('\nGenerating demo...')
+    output_dir_pose = os.path.join(output_dir, 'pose/')
+    clean_directory(output_dir_pose)
     for i in tqdm(range(len(image_2d_dir))):
         image_2d = plt.imread(image_2d_dir[i])
         image_3d = plt.imread(image_3d_dir[i])
@@ -327,7 +336,6 @@ def get_pose3D(video_path, output_dir):
         ax.set_title("Reconstruction", fontsize=font_size)
 
         # Save
-        output_dir_pose = output_dir + 'pose/'
         os.makedirs(output_dir_pose, exist_ok=True)
         plt.savefig(output_dir_pose + str(('%04d' % i)) + '_pose.png', dpi=200, bbox_inches='tight')
 
