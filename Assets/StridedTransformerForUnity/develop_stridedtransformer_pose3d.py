@@ -93,12 +93,12 @@ from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 #%cd /content/StridedTransformer-Pose3D/demo/video
 
 # %cd /content/3d-human-pose-estimation/demo/video
-video_url = 'https://youtu.be/U4P4u6eSIHw?si=5XCbThpCddUNiwRs' #@param {type:"string"}
+video_url = 'https://youtu.be/sZOl3HXCqUU?si=v7VG2n2NSaV6tZxd' #@param {type:"string"}
 
 #@markdown 動画の切り抜き範囲(秒)を指定してください。\
 #@markdown 30秒以上の場合OOM発生の可能性が高いため注意
-start_sec =  220#@param {type:"integer"}
-end_sec =  222#@param {type:"integer"}
+start_sec =  85#@param {type:"integer"}
+end_sec =  89#@param {type:"integer"}
 
 (start_pt, end_pt) = (start_sec, end_sec)
 
