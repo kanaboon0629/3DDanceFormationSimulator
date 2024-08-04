@@ -59,8 +59,14 @@ import cv2
 # %cd /content/3d-human-pose-estimation
 
 import os
+base_dir = os.path.dirname(os.path.abspath(__file__))
 
 from yt_dlp import YoutubeDL
+import moviepy.config as mpc
+
+# `ffmpeg` のパスを指定
+ffmpeg_path = os.path.join(base_dir, '../../myvenv/bin/ffmpeg/ffmpeg-osx-v3.2.4')
+mpc.FFMPEG_BINARY = ffmpeg_path
 
 from moviepy.video.fx.resize import resize
 from moviepy.editor import VideoFileClip, AudioFileClip, ImageSequenceClip, CompositeAudioClip
@@ -103,7 +109,6 @@ end_sec =  4#@param {type:"integer"}
 (start_pt, end_pt) = (start_sec, end_sec)
 
 download_resolution = 360
-base_dir = os.path.dirname(os.path.abspath(__file__))
 
 full_video_path = os.path.join(base_dir, '3d-human-pose-estimation/demo/video/full_video.mp4')
 file_name = 'input_clip.mp4'
