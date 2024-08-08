@@ -206,3 +206,13 @@ Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/sample_vi
 Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/output/sample_video/sample_video.mp4
 Assets/StridedTransformerForUnity/3d-human-pose-estimation/demo/video/*
 skeleton_coord.json
+
+# 大きなライブラリファイル
+3DDanceFormationSimulator_iOS/Libraries/libil2cpp.a
+3DDanceFormationSimulator_iOS/Libraries/libiPhone-lib.a
+
+# ビルド出力
+build/
+*.log
+*.tmp
+*.swp
