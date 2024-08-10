@@ -6,17 +6,9 @@ public class NumberPicker : MonoBehaviour
     public Dropdown numberDropdown;
     public Text selectedValueText;
     public Button confirmButton;
-    public CanvasScaler canvasScaler;
 
     void Start()
     {
-        // キャンバススケーラーの設定
-        if (canvasScaler != null)
-        {
-            canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-            canvasScaler.referenceResolution = new Vector2(1920, 1080); // 例としてフルHD解像度
-        }
-        
         // ドロップダウンの初期値を設定
         numberDropdown.value = 0;
         UpdateSelectedValueText();
@@ -26,6 +18,11 @@ public class NumberPicker : MonoBehaviour
 
         // ボタンがクリックされたときのイベント
         confirmButton.onClick.AddListener(OnConfirmButtonClicked);
+
+        // プレイヤーの設定から初期値をロード
+        int savedValue = PlayerPrefs.GetInt("SelectedNumber", 1); // デフォルトは1
+        numberDropdown.value = savedValue - 1; // プレイヤーの設定から取得するためには -1
+        UpdateSelectedValueText();
     }
 
     void UpdateSelectedValueText()
@@ -39,6 +36,9 @@ public class NumberPicker : MonoBehaviour
     {
         int numberOfPeople = numberDropdown.value + 1; // +1 はオプションの開始値が1から
         Debug.Log("設定された人数: " + numberOfPeople);
-        // 設定された人数で何かを実行する処理をここに追加
+        
+        // プレイヤーの設定に人数を保存
+        PlayerPrefs.SetInt("SelectedNumber", numberOfPeople);
+        PlayerPrefs.Save(); // 保存
     }
 }
