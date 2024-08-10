@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/NumberSettings.unity
+    guid: a2b02d2c3b1a94b4fb03d740855b9556
+  - enabled: 1
+    path: Assets/Scenes/FormationSetting.unity
+    guid: 6da4c521bbe6a4c36b0e776a8708c87a
+  - enabled: 0
     path: Assets/Scenes/multiplePerson.unity
     guid: 0db485c6702ea4b9284955185c333b71
   m_configObjects: {}
