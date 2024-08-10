@@ -1,6 +1,7 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="BioIK.BioJoint/Motion" preserve="nothing" serialized="true"/>
+		<type fullname="UIVirtualJoystick/Event" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.PlayerInput/ControlsChangedEvent" preserve="nothing" serialized="true"/>
