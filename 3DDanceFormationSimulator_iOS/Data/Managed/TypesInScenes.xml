@@ -4,8 +4,13 @@
 		<type fullname="BioIK.BioJoint" preserve="nothing"/>
 		<type fullname="BioIK.BioSegment" preserve="nothing"/>
 		<type fullname="BioIK.Position" preserve="nothing"/>
+		<type fullname="CameraControlOnSwipe" preserve="nothing"/>
+		<type fullname="CameraControlWithJoystick" preserve="nothing"/>
+		<type fullname="Joystick" preserve="nothing"/>
+		<type fullname="MobileDisableAutoSwitchControls" preserve="nothing"/>
 		<type fullname="PlayerIKTarget" preserve="nothing"/>
 		<type fullname="StarterAssets.ThirdPersonController" preserve="nothing"/>
+		<type fullname="UIVirtualJoystick" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputSettings" preserve="nothing"/>
@@ -91,7 +96,9 @@
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
+		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.EventTrigger" preserve="nothing"/>
+		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
