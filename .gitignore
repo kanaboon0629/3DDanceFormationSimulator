@@ -216,3 +216,7 @@ build/
 *.log
 *.tmp
 *.swp
+
+#ユーザ設定
+*.xcuserstate
+*.xcuserdata
