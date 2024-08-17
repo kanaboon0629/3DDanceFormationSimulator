@@ -37,20 +37,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "CameraControlOnSwipe",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "CameraControlWithJoystick",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "",
             "nativeClass": "DelayedCallManager",
             "fullManagedTypeName": "",
@@ -66,6 +52,13 @@
                 "Assets/Scenes/FormationSetting.unity",
                 "Assets/Scenes/NumberSettings.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FormationManager",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -85,13 +78,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "Joystick",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "",
             "nativeClass": "LevelGameManager",
             "fullManagedTypeName": "",
@@ -105,6 +91,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "MobileDisableAutoSwitchControls",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "MovableObject",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -134,6 +127,20 @@
                 "Assets/Scenes/FormationSetting.unity",
                 "Assets/Scenes/NumberSettings.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "NumberPicker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ObjectDragAndColorChange",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
@@ -312,7 +319,7 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -341,7 +348,7 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -360,7 +367,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -379,7 +386,6 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity",
                 "Assets/Scenes/NumberSettings.unity"
             ]
         },
@@ -389,7 +395,6 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity",
                 "Assets/Scenes/NumberSettings.unity"
             ]
         },
@@ -399,7 +404,7 @@
             "fullManagedTypeName": "UnityEngine.CharacterController",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -408,7 +413,8 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/FormationSetting.unity",
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -535,7 +541,8 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/FormationSetting.unity",
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -553,7 +560,8 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/FormationSetting.unity",
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -562,7 +570,8 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/FormationSetting.unity",
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -598,7 +607,6 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity",
                 "Assets/Scenes/NumberSettings.unity"
             ]
         },
@@ -608,7 +616,8 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/FormationSetting.unity",
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -833,7 +842,17 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity"
+                "Assets/Scenes/NumberSettings.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SphereCollider",
+            "fullManagedTypeName": "UnityEngine.SphereCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/FormationSetting.unity",
+                "Assets/Scenes/NumberSettings.unity"
             ]
         },
         {
@@ -842,7 +861,6 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FormationSetting.unity",
                 "Assets/Scenes/NumberSettings.unity"
             ]
         },
