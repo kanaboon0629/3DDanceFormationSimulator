@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D2017847-6A30-42D1-A9A0-1D54F3CF1775"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "599CB169-9934-4540-A7EB-959568B24574"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Classes/Native/Assembly-CSharp.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13854"
+            endingLineNumber = "13854"
+            landmarkName = "MovableObject_HandleInput_m95B1F5AA99FFD8D0BFBD9317C043DF9F50B1A4F9(__this, method)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7285007E-E0EA-4CEE-88FC-39FA14722BF9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Classes/Native/Assembly-CSharp.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13855"
+            endingLineNumber = "13855"
+            landmarkName = "MovableObject_HandleInput_m95B1F5AA99FFD8D0BFBD9317C043DF9F50B1A4F9(__this, method)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47AF173B-7502-4830-AD86-5E8BA1B8F3DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Classes/Native/Assembly-CSharp.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13856"
+            endingLineNumber = "13856"
+            landmarkName = "MovableObject_HandleInput_m95B1F5AA99FFD8D0BFBD9317C043DF9F50B1A4F9(__this, method)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
