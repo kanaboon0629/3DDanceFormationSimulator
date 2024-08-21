@@ -4,10 +4,14 @@
 		<type fullname="BioIK.BioJoint" preserve="nothing"/>
 		<type fullname="BioIK.BioSegment" preserve="nothing"/>
 		<type fullname="BioIK.Position" preserve="nothing"/>
+		<type fullname="CameraControlOnSwipe" preserve="nothing"/>
+		<type fullname="CameraControlWithJoystick" preserve="nothing"/>
 		<type fullname="FormationManager" preserve="nothing"/>
+		<type fullname="Joystick" preserve="nothing"/>
 		<type fullname="MobileDisableAutoSwitchControls" preserve="nothing"/>
-		<type fullname="MovableObject" preserve="nothing"/>
 		<type fullname="NumberPicker" preserve="nothing"/>
+		<type fullname="ObjectDataLoader" preserve="nothing"/>
+		<type fullname="ObjectDataSaver" preserve="nothing"/>
 		<type fullname="ObjectDragAndColorChange" preserve="nothing"/>
 		<type fullname="PlayerIKTarget" preserve="nothing"/>
 		<type fullname="SceneSwitcher" preserve="nothing"/>
