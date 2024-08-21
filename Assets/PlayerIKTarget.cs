@@ -121,7 +121,6 @@ public class PlayerIKTarget : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-        // 自分のRendererコンポーネントを取得
         Renderer renderer = GetComponentInChildren<Renderer>();
 
         // 赤色かどうかを判定 (RGBで赤色は (1, 0, 0) とする)

@@ -17409,10 +17409,16 @@ struct CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1  : public 
 	float ___moveSpeed_5;
 	// System.Single CameraControlOnSwipe::scrollSensitivity
 	float ___scrollSensitivity_6;
+	// System.Single CameraControlOnSwipe::zoomSpeed
+	float ___zoomSpeed_7;
+	// System.Single CameraControlOnSwipe::minFov
+	float ___minFov_8;
+	// System.Single CameraControlOnSwipe::maxFov
+	float ___maxFov_9;
 	// UnityEngine.Vector3 CameraControlOnSwipe::lastTouchPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lastTouchPosition_7;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lastTouchPosition_10;
 	// System.Boolean CameraControlOnSwipe::isDragging
-	bool ___isDragging_8;
+	bool ___isDragging_11;
 };
 
 // CameraControlWithJoystick
@@ -29758,9 +29764,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4368[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4369[1] = 
 {
 	static_cast<int32_t>(offsetof(ObjectDataLoader_tD4C288BC183BCC123D590F042B5BDE5BA57F8E09, ___assetPrefab_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4370[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4370[8] = 
 {
-	static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___mainCamera_4)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___moveSpeed_5)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___scrollSensitivity_6)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___lastTouchPosition_7)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___isDragging_8)),};
+	static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___mainCamera_4)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___moveSpeed_5)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___scrollSensitivity_6)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___zoomSpeed_7)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___minFov_8)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___maxFov_9)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___lastTouchPosition_10)),static_cast<int32_t>(offsetof(CameraControlOnSwipe_t44316FA451729B5A49953ECE39FC083FA4F8D2A1, ___isDragging_11)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4371[1] = 
 {
 	static_cast<int32_t>(offsetof(MobileDisableAutoSwitchControls_t0A648011382F1B8F00CD89B26AB30777CCBB9FDA, ___playerInput_4)),};
