@@ -1,6 +1,10 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="ObjectDataSaver">
+			<method name="SaveObjectData"/>
+		</type>
 		<type fullname="SceneSwitcher">
+			<method name="SwitchToScene"/>
 			<method name="SwitchToScene"/>
 		</type>
 	</assembly>
