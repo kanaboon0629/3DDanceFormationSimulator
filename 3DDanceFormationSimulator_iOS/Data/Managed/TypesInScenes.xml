@@ -17,6 +17,8 @@
 		<type fullname="SceneSwitcher" preserve="nothing"/>
 		<type fullname="StarterAssets.ThirdPersonController" preserve="nothing"/>
 		<type fullname="UIVirtualJoystick" preserve="nothing"/>
+		<type fullname="VideoPicker" preserve="nothing"/>
+		<type fullname="VideoPickerButton" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputSettings" preserve="nothing"/>
