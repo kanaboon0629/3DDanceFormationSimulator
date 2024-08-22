@@ -23,7 +23,7 @@ public class VideoGalleryManager : MonoBehaviour
         {
             if (path != null)
             {
-                resultText.text = "Selected video";
+                resultText.text = "Video is Selected";
                 PlayVideo(path);
             }
             else
