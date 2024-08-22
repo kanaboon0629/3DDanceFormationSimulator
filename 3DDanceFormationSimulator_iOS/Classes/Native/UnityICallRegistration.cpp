@@ -4830,6 +4830,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Video_VideoPlayer_Play();
 		Register_UnityEngine_Video_VideoPlayer_Play();
 
+		//System.Void UnityEngine.Video.VideoPlayer::Prepare()
+		void Register_UnityEngine_Video_VideoPlayer_Prepare();
+		Register_UnityEngine_Video_VideoPlayer_Prepare();
+
 		//System.Void UnityEngine.Video.VideoPlayer::set_targetTexture(UnityEngine.RenderTexture)
 		void Register_UnityEngine_Video_VideoPlayer_set_targetTexture();
 		Register_UnityEngine_Video_VideoPlayer_set_targetTexture();

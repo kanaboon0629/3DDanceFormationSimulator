@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4f0d242fb64a14692dea4ac4ff6852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonFileName: hulaDance.json
+  jsonFileName: skeleton_coord.json
   heightOfPerson: 180
   isSymmetry: 0
   FRAME_NUM: 0
