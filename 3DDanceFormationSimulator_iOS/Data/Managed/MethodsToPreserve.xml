@@ -18,6 +18,9 @@
 		<type fullname="VideoGalleryManager">
 			<method name="OpenGalleryForVideo"/>
 		</type>
+		<type fullname="VideoPlayerScript">
+			<method name="PlayLatestVideo"/>
+		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerIntField">

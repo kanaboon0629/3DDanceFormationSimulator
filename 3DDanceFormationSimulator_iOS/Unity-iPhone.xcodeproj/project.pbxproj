@@ -53,6 +53,7 @@
 		281947F18E921A0B1F5DAC0A /* mscorlib__13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A49FBAA181F07A626ED17 /* mscorlib__13.cpp */; };
 		2A334E909E5E9AB7B6996245 /* iOSStepCounter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C09401DBD6D918AFDEA3160 /* iOSStepCounter.mm */; };
 		2A8A449B9291F6C3313F9532 /* Generics__36.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46804338931026F5ED389443 /* Generics__36.cpp */; };
+		2C3448A2A1B84124059CC6F5 /* Generics__53.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56174779B1E9D8F225292531 /* Generics__53.cpp */; };
 		2C684B958E64B0C0F0722BEC /* Generics__24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AD4582AD3D361CBEB2B814 /* Generics__24.cpp */; };
 		2CA94CAB8A92E341D2385522 /* Unity.TextMeshPro__5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91D44024BA1FA6C57924FD62 /* Unity.TextMeshPro__5.cpp */; };
 		2D0845DF9C6C01607BCDBC81 /* mscorlib__5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 774F44E18963BFA17E6047BE /* mscorlib__5.cpp */; };
@@ -476,6 +477,7 @@
 		52C248A48D95975EF40A51BD /* NativeGallery.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = NativeGallery.mm; path = Libraries/Plugins/NativeGallery/iOS/NativeGallery.mm; sourceTree = SOURCE_ROOT; };
 		53AD4582AD3D361CBEB2B814 /* Generics__24.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__24.cpp; path = Classes/Native/Generics__24.cpp; sourceTree = SOURCE_ROOT; };
 		54A14696A32308BBA9BA1431 /* Unity.RenderPipelines.Universal.Runtime_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Unity.RenderPipelines.Universal.Runtime_CodeGen.c; path = Classes/Native/Unity.RenderPipelines.Universal.Runtime_CodeGen.c; sourceTree = SOURCE_ROOT; };
+		56174779B1E9D8F225292531 /* Generics__53.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__53.cpp; path = Classes/Native/Generics__53.cpp; sourceTree = SOURCE_ROOT; };
 		5623C57317FDCB0800090B9E /* Unity-iPhone Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unity-iPhone Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5623C57A17FDCB0900090B9E /* Unity-iPhone Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unity-iPhone Tests-Info.plist"; sourceTree = "<group>"; };
 		5623C57C17FDCB0900090B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1177,6 +1179,7 @@
 				EBB24E2886051E0A9866494D /* UnityEngine.UnityWebRequestTextureModule_CodeGen.c */,
 				126F4264B49BEE3CCA2F0874 /* Assembly-CSharp__3.cpp */,
 				37BD45B7B7969A2658383DAC /* Generics__52.cpp */,
+				56174779B1E9D8F225292531 /* Generics__53.cpp */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -1824,6 +1827,7 @@
 				8E024C2891C1C8A03CD9EFC2 /* NativeGallery.mm in Sources */,
 				B4F94F2AA0895370B2118A8E /* Assembly-CSharp__3.cpp in Sources */,
 				7EF94A2CBCEB905B056ED0AC /* Generics__52.cpp in Sources */,
+				2C3448A2A1B84124059CC6F5 /* Generics__53.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2370,6 +2374,14 @@
 					MobileCoreServices,
 					"-framework",
 					ImageIO,
+					"-weak_framework",
+					PhotosUI,
+					"-framework",
+					Photos,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					ImageIO,
 					"-weak_framework PhotosUI",
 					"-framework Photos",
 					"-framework MobileCoreServices",
@@ -2451,6 +2463,14 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"$(OTHER_LDFLAGS_FRAMEWORK)",
+					"-weak_framework",
+					PhotosUI,
+					"-framework",
+					Photos,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					ImageIO,
 					"-weak_framework",
 					PhotosUI,
 					"-framework",
@@ -2565,6 +2585,14 @@
 					MobileCoreServices,
 					"-framework",
 					ImageIO,
+					"-weak_framework",
+					PhotosUI,
+					"-framework",
+					Photos,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					ImageIO,
 					"-weak_framework PhotosUI",
 					"-framework Photos",
 					"-framework MobileCoreServices",
@@ -2648,6 +2676,14 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"$(OTHER_LDFLAGS_FRAMEWORK)",
+					"-weak_framework",
+					PhotosUI,
+					"-framework",
+					Photos,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					ImageIO,
 					"-weak_framework",
 					PhotosUI,
 					"-framework",

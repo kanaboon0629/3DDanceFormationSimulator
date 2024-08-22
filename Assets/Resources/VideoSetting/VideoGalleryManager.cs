@@ -11,10 +11,17 @@ public class VideoGalleryManager : MonoBehaviour
 
     private void Start()
     {
-        // RenderTextureの設定
-        renderTexture = new RenderTexture(1920, 1080, 0);
-        videoPlayer.targetTexture = renderTexture;
-        rawImage.texture = renderTexture;
+        // RenderTextureを作成し、VideoPlayerに設定する
+        renderTexture = new RenderTexture(1920, 1080, 0); // 解像度は適宜設定してください
+        if (videoPlayer != null)
+        {
+            videoPlayer.targetTexture = renderTexture;
+            if (rawImage != null)
+            {
+                rawImage.texture = renderTexture;
+                rawImage.gameObject.SetActive(false); // 初期状態では非表示
+            }
+        }
     }
 
     public void OpenGalleryForVideo()
@@ -38,7 +45,18 @@ public class VideoGalleryManager : MonoBehaviour
         if (videoPlayer != null)
         {
             videoPlayer.url = path;
-            videoPlayer.Play();
+            videoPlayer.Prepare();  // Prepareメソッドで動画の準備を開始
+
+            videoPlayer.prepareCompleted += (source) =>
+            {
+                // 動画の準備が完了したら再生開始
+                videoPlayer.Play();
+                // RawImageを表示する
+                if (rawImage != null)
+                {
+                    rawImage.gameObject.SetActive(true);
+                }
+            };
         }
         else
         {

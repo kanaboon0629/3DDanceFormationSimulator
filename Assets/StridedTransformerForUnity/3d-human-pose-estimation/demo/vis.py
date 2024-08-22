@@ -29,6 +29,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
+StreamingAssets_dir = os.path.abspath(os.path.join(base_dir, os.path.join('..', '..', '..', 'StreamingAssets')))
 
 def clean_directory(directory):
     if os.path.exists(directory):
@@ -153,7 +154,8 @@ def img2video(video_path, output_dir):
     img = cv2.imread(names[0])
     size = (img.shape[1], img.shape[0])
 
-    videoWrite = cv2.VideoWriter(output_dir + video_name + '.mp4', fourcc, fps, size) 
+    # videoWrite = cv2.VideoWriter(output_dir + video_name + '.mp4', fourcc, fps, size) 
+    videoWrite = cv2.VideoWriter(StreamingAssets_dir + '/' + video_name + '.mp4', fourcc, fps, size)
 
     for name in names:
         img = cv2.imread(name)
@@ -300,7 +302,9 @@ def get_pose3D(video_path, output_dir):
 
         plt.savefig(output_dir_3D + str(('%04d' % i)) + '_3D.png', dpi=200, format='png', bbox_inches='tight')
 
-    with open("skeleton_coord.json", "w", encoding="utf-8") as f:
+    # with open("skeleton_coord.json", "w", encoding="utf-8") as f:
+    #     json.dump(joint_coord_dict, f, indent=4)
+    with open(StreamingAssets_dir + '/' + "skeleton_coord.json", "w", encoding="utf-8") as f:
         json.dump(joint_coord_dict, f, indent=4)
 
     print('Generating 3D pose successful!')
