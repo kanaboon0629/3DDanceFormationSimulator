@@ -114,6 +114,14 @@ struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
 struct TaskCompletionSource_1_tF8DA32849B904AE4F51ECAF6C6D7FA080481A35A;
 // System.Threading.Tasks.TaskCompletionSource`1<NativeGallery/Permission>
 struct TaskCompletionSource_1_tA40684670E345C5786526437707F448A78DD4DC2;
+// System.Threading.Tasks.TaskFactory`1<System.Int32Enum>
+struct TaskFactory_1_t96AF1AA119B568BA8916E7FD621B61B350B9BB49;
+// System.Threading.Tasks.TaskFactory`1<System.String>
+struct TaskFactory_1_t7ABCD7F9503486A075E0B072E6EB95956CFE3106;
+// System.Threading.Tasks.TaskFactory`1<UnityEngine.Texture2D>
+struct TaskFactory_1_tA02CD66EEE1C447BE2C3BDAF4821F919418AE5FF;
+// System.Threading.Tasks.TaskFactory`1<NativeGallery/Permission>
+struct TaskFactory_1_t35C6AEC41B60E4359493BFD3029B9555DD606C05;
 // System.Threading.Tasks.Task`1<System.Int32Enum>
 struct Task_1_t8DED34447688BFCF5112B0D05D5A80CED94E4BFB;
 // System.Threading.Tasks.Task`1<System.Object>
@@ -1515,18 +1523,38 @@ struct String_t_StaticFields
 // System.Runtime.CompilerServices.TaskAwaiter`1<UnityEngine.Texture2D>
 
 // System.Threading.Tasks.Task`1<System.Int32Enum>
+struct Task_1_t8DED34447688BFCF5112B0D05D5A80CED94E4BFB_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t96AF1AA119B568BA8916E7FD621B61B350B9BB49* ___s_defaultFactory_23;
+};
 
 // System.Threading.Tasks.Task`1<System.Int32Enum>
 
 // System.Threading.Tasks.Task`1<System.String>
+struct Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t7ABCD7F9503486A075E0B072E6EB95956CFE3106* ___s_defaultFactory_23;
+};
 
 // System.Threading.Tasks.Task`1<System.String>
 
 // System.Threading.Tasks.Task`1<UnityEngine.Texture2D>
+struct Task_1_t95921EB64E237ACD28589D64B693C652268F225E_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_tA02CD66EEE1C447BE2C3BDAF4821F919418AE5FF* ___s_defaultFactory_23;
+};
 
 // System.Threading.Tasks.Task`1<UnityEngine.Texture2D>
 
 // System.Threading.Tasks.Task`1<NativeGallery/Permission>
+struct Task_1_t5C89128A5298F29B41DC7B2DA6CCB578F49EFBC8_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t35C6AEC41B60E4359493BFD3029B9555DD606C05* ___s_defaultFactory_23;
+};
 
 // System.Threading.Tasks.Task`1<NativeGallery/Permission>
 

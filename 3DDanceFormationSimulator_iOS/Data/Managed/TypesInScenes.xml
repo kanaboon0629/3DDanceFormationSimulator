@@ -7,6 +7,7 @@
 		<type fullname="CameraControlOnSwipe" preserve="nothing"/>
 		<type fullname="CameraControlWithJoystick" preserve="nothing"/>
 		<type fullname="FormationManager" preserve="nothing"/>
+		<type fullname="InputFieldHandler" preserve="nothing"/>
 		<type fullname="Joystick" preserve="nothing"/>
 		<type fullname="MobileDisableAutoSwitchControls" preserve="nothing"/>
 		<type fullname="NumberPicker" preserve="nothing"/>
@@ -14,6 +15,8 @@
 		<type fullname="ObjectDataSaver" preserve="nothing"/>
 		<type fullname="ObjectDragAndColorChange" preserve="nothing"/>
 		<type fullname="PlayerIKTarget" preserve="nothing"/>
+		<type fullname="RealtimeInputValidation" preserve="nothing"/>
+		<type fullname="RunPythonScript" preserve="nothing"/>
 		<type fullname="SceneSwitcher" preserve="nothing"/>
 		<type fullname="StarterAssets.ThirdPersonController" preserve="nothing"/>
 		<type fullname="TabController" preserve="nothing"/>
@@ -86,6 +89,7 @@
 		<type fullname="UnityEngine.CharacterController" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
+		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
 		<type fullname="UnityEngine.Font" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
