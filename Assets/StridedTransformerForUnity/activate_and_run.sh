@@ -9,4 +9,4 @@ which python
 which pip
 
 # Pythonスクリプトの実行
-python Assets/StridedTransformerForUnity/develop_stridedtransformer_pose3d.py
+python Assets/StridedTransformerForUnity/develop_stridedtransformer_pose3d.py "$1" "$2" "$3"

@@ -1,10 +1,12 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="InputFieldHandler">
+			<method name="OnSubmit"/>
+		</type>
 		<type fullname="ObjectDataSaver">
 			<method name="SaveObjectData"/>
 		</type>
 		<type fullname="SceneSwitcher">
-			<method name="SwitchToScene"/>
 			<method name="SwitchToScene"/>
 			<method name="SwitchToScene"/>
 			<method name="SwitchToScene"/>
