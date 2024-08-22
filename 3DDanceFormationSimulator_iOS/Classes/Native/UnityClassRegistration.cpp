@@ -6,6 +6,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Core();
 	RegisterModule_Core();
 
+	void RegisterModule_AndroidJNI();
+	RegisterModule_AndroidJNI();
+
 	void RegisterModule_Animation();
 	RegisterModule_Animation();
 
@@ -51,6 +54,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_TextCoreTextEngine();
 	RegisterModule_TextCoreTextEngine();
 
+	void RegisterModule_TLS();
+	RegisterModule_TLS();
+
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
@@ -59,6 +65,15 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_UIElements();
 	RegisterModule_UIElements();
+
+	void RegisterModule_UnityWebRequest();
+	RegisterModule_UnityWebRequest();
+
+	void RegisterModule_UnityWebRequestTexture();
+	RegisterModule_UnityWebRequestTexture();
+
+	void RegisterModule_Video();
+	RegisterModule_Video();
 
 	void RegisterModule_XR();
 	RegisterModule_XR();
@@ -154,7 +169,7 @@ class Skybox;
 class SortingGroup; template <> void RegisterUnityClass<SortingGroup>(const char*);
 class StreamingController; 
 class Terrain; 
-class VideoPlayer; 
+class VideoPlayer; template <> void RegisterUnityClass<VideoPlayer>(const char*);
 class VisualEffect; 
 class WindZone; 
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
@@ -289,7 +304,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 78 non stripped classes
+	//Total: 79 non stripped classes
 	//0. Animator
 	RegisterUnityClass<Animator>("Animation");
 	//1. AnimatorController
@@ -446,5 +461,7 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<UI::CanvasGroup>("UI");
 	//77. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
+	//78. VideoPlayer
+	RegisterUnityClass<VideoPlayer>("Video");
 
 }

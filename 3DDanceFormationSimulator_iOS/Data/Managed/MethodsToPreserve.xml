@@ -8,8 +8,8 @@
 			<method name="SwitchToScene"/>
 			<method name="SwitchToScene"/>
 		</type>
-		<type fullname="VideoPickerButton">
-			<method name="OnPickVideoButtonClicked"/>
+		<type fullname="VideoGalleryManager">
+			<method name="OpenGalleryForVideo"/>
 		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">

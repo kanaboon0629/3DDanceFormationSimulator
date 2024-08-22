@@ -1072,6 +1072,13 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.RawImage",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Scrollbar",
             "moduleName": "",
             "usedInScenes": []
@@ -1105,16 +1112,18 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "VideoPicker",
-            "moduleName": "",
-            "usedInScenes": []
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "VideoPlayer",
+            "fullManagedTypeName": "UnityEngine.Video.VideoPlayer",
+            "moduleName": "Video",
+            "usedInScenes": [
+                "Assets/Scenes/JsonSettings.unity"
+            ]
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "VideoPickerButton",
+            "fullManagedTypeName": "VideoGalleryManager",
             "moduleName": "",
             "usedInScenes": []
         }
